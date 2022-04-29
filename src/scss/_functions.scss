@@ -1,0 +1,6 @@
+@import "variables";
+
+@function rem($value) {
+  $result: $value / $default_size;
+  @return $result + rem;
+}

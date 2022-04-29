@@ -1,0 +1,28 @@
+//Responsive
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media (max-width: $mobile) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  } @else if $media == tabletLarge {
+    @media (min-width: $tabletLarge) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  } @else if $media == desktopLarge {
+    @media (min-width: $desktopLarge) {
+      @content;
+    }
+  } @else if $media == desktopHuge {
+    @media (min-width: $desktopHuge) {
+      @content;
+    }
+  }
+}
