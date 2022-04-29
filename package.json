@@ -1,5 +1,5 @@
 {
-  "name": "porten",
+  "name": "porten_lending",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/honcaharOyara/porten.git"
+    "url": "git+https://github.com/honcaharOyara/porten_lending.git"
   },
   "author": "Honchar Yaroslav",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/honcaharOyara/porten/issues"
+    "url": "https://github.com/honcaharOyara/porten_lending/issues"
   },
-  "homepage": "https://github.com/honcaharOyara/porten#readme",
+  "homepage": "https://github.com/honcaharOyara/porten_lending#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-connect": "^5.7.0",
