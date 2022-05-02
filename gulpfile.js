@@ -1,8 +1,8 @@
 const {src, dest, watch, series, parallel} = require('gulp');
 const htmlmin = require('gulp-htmlmin');
-const minify = require('gulp-minify');
 const scss = require('gulp-sass')(require('sass'));
 const connect = require('gulp-connect');
+const webpack = require('webpack-stream')
 
 const appPath = {
     scss: './src/scss/**/*.scss',
@@ -19,10 +19,6 @@ const destPath = {
     fonts: './dest/fonts',
     js: './dest/js'
 }
-
-const jsPath = [
-    './src/js/script.js'
-]
 
 function buildStyles() {
     return src(appPath.scss)
@@ -44,22 +40,17 @@ function buildHtml() {
 }
 
 function buildJs() {
-    return src(jsPath)
-        .pipe(minify({
-            ext: {
-                min: '.min.js'
+    return src(appPath.js)
+        .pipe(webpack({
+            entry: {
+                app: './src/js/index.js',
+            },
+            output: {
+                filename: 'script.js',
             },
         }))
         .pipe(dest(destPath.js))
         .pipe(connect.reload());
-}
-
-function startLocalServer() {
-    connect.server({
-        root: 'dest',
-        port: 7070,
-        livereload: true
-    })
 }
 
 function copyImages() {
@@ -74,12 +65,20 @@ function copyFonts() {
         .pipe(connect.reload());
 }
 
+function startLocalServer() {
+    connect.server({
+        root: 'dest',
+        port: 7070,
+        livereload: true
+    })
+}
+
 function watchCode() {
     watch(appPath.scss, buildStyles)
     watch(appPath.html, buildHtml)
     watch(appPath.js, buildJs)
 }
 
-exports.build = series(buildStyles, buildHtml,  buildJs, copyFonts, copyImages)
+exports.build = series(buildStyles, buildHtml,  buildJs, copyImages, copyFonts)
 
 exports.default = series(buildStyles, buildHtml,  buildJs, copyFonts, copyImages, parallel(startLocalServer, watchCode))

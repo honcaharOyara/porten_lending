@@ -1,0 +1,22 @@
+body {
+  position: relative;
+  font-family: "PT sans", sans-serif;
+  font-size: $default_font_size;
+}
+
+.custom-btn {
+  padding: 10px 20px;
+  background-color: $bg_dark;
+}
+
+.custom-btn {
+  display: inline-block;
+  padding: 10px 20px !important;
+  background-color: $bg_dark;
+  transition: background-color .3s ease;
+  text-decoration: none;
+}
+
+.custom-btn:hover {
+  background-color: $bg_light_dark;
+}

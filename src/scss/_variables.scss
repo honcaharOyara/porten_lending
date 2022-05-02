@@ -1,10 +1,17 @@
 //Font sizes
-$default_size: 14px;
+$default_font_size: 14px;
 
-//Screen sizes
-$mobile: 0px;
-$tablet: 0px;
-$tabletLarge: 0px;
-$desktop: 0px;
-$desktopLarge: 0px;
-$desktopHuge: 0px;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1150px,
+        xxl: 1400px
+);
+
+// Colors
+$bg_black: #000000;
+$bg_dark: #0F0F0F;
+$bg_light_dark: #1F1F1F;
+$text_gray: #969696;

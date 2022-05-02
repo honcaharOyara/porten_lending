@@ -1,0 +1,76 @@
+ .header {
+   width: 100%;
+   position: fixed;
+   z-index: 100;
+   background-color: $bg_dark;
+
+   // --- Pre-header ---
+   &__pre-header {
+     background-color: $bg_black;
+   }
+
+   &__info {
+     img {
+       width: 16px;
+       margin-right: 15px;
+     }
+   }
+
+   &__info,
+   &__log-in {
+     a,
+     span {
+       color: $text_gray;
+     }
+
+     a {
+       padding: 14px 20px !important;
+       background-color: $bg_black;
+     }
+   }
+
+   &__info {
+     span:before {
+       content: '|';
+       margin-inline: 15px;
+       font-size: rem(16px);
+     }
+
+     @include media-breakpoint-down(lg) {
+       span {
+         display: none;
+       }
+     }
+   }
+
+   &__log-in {
+     img {
+       margin: -2px 12px 0 0;
+       width: 19px;
+     }
+   }
+
+   // --- Navigation ---
+   .navbar {
+
+     &-brand {
+       padding: 10px 20px !important;
+
+       img {
+         width: 104px;
+       }
+     }
+
+     .nav-link {
+       padding: 30px 20px !important;
+       text-transform: uppercase;
+     }
+
+     @include media-breakpoint-down(lg) {
+       .nav-link {
+         display: block;
+         padding: 10px 20px !important;
+       }
+     }
+   }
+ }
