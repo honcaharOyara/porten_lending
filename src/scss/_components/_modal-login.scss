@@ -1,0 +1,37 @@
+.lightbox {
+  &__header,
+  &__body,
+  &__foter,
+  .nav-link,
+  .nav-link:hover,
+  &__tabs,
+  &__tabs:hover,
+  &__btn-close,
+  .custom-btn.active,
+  .custom-btn:focus,
+  .custom-btn:hover{
+    border: none;
+    border-radius: 0;
+  }
+
+  .custom-btn {
+    background-color: $bg_black;
+  }
+
+  .custom-btn:active {
+    background-color: $bg_dark;
+  }
+
+  .custom-btn:hover,
+  .custom-btn.active {
+    background-color: $bg_light_dark;
+  }
+
+  &__content {
+    background-color: $bg_dark;
+  }
+
+  &__btn-close {
+    transition: all .3s ease;
+  }
+}

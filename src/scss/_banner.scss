@@ -1,11 +1,11 @@
-.pt-130 {
-  padding-top: 130px;
-}
-
-@include media-breakpoint-down(lg) {
-  .pt-130 {
-    padding-top: 99.02px;
-  }
+.main {
+    padding-top: 130px 0;
+    background: url("../img/1-banner__bg.jpg") center /cover;
+    @include media-breakpoint-down(lg) {
+      .main {
+        padding-top: 99.02px;
+      }
+    }
 }
 
 .banner {

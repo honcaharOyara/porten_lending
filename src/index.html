@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="header__log-in">
-                    <a class="custom-btn" href="#">
+                    <a class="custom-btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="./img/svg/log-in.svg" alt="Porten">
                         <span>Войти / Регистрация</span>
                     </a>
@@ -68,7 +68,7 @@
     </nav>
 </header>
 
-<div class="pt-130">
+<main class="main">
     <section class="banner">
         <div class="container-xl">
             <div class="banner__logo">
@@ -76,15 +76,105 @@
                 <span>санкт-петербург</span>
             </div>
             <p class="banner__content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut in.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut
+                in.
                 Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis. Penatibus
                 ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl
                 viverra.
             </p>
         </div>
     </section>
-</div>
+</main>
 
+<div class="modal fade lightbox" id="exampleModal" tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content lightbox__content">
+            <div class="modal-header lightbox__header">
+                <h5 class="modal-title text-white">Вход/Регистрация</h5>
+                <button type="button" class="btn-close bg-white lightbox__btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs lightbox__tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link custom-btn text-white active" id="log-tab" data-bs-toggle="tab"
+                                data-bs-target="#log-in"
+                                type="button" role="tab" aria-controls="log-in" aria-selected="true">Вход
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link custom-btn text-white" id="reg-tab" data-bs-toggle="tab"
+                                data-bs-target="#registration"
+                                type="button" role="tab" aria-controls="registration" aria-selected="false">Регистрация
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class=" tab-pane fade show active" id="log-in" role="tabpanel" aria-labelledby="log-in">
+                        <form class="row g-3 mt-3 js-form-log">
+                            <div class="mb-3 col-xl-12">
+                                <label for="logEmail" class="col-form-label text-white">Електронная почта</label>
+                                <input type="text" class="form-control custom-input" id="logEmail"
+                                       placeholder="Електронная почта" required>
+                            </div>
+                            <div class="mb-3 col-xl-12">
+                                <label for="logPassword" class="col-form-label text-white">Пароль</label>
+                                <input type="password" class="form-control custom-input" id="logPassword"
+                                       placeholder="Пароль" required>
+                            </div>
+                            <div class="col-12 ">
+                                <button class="custom-btn text-white js-btn-log" type="submit">Войти</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="registration" role="tabpanel" aria-labelledby="registration-tab">
+                        <form class="row g-3 mt-3 js-form-reg">
+                            <div class="mb-3 col-xl-6">
+                                <label for="validationDefault01" class="form-label text-white">Имя</label>
+                                <input type="text" class="form-control custom-input" id="validationDefault01" placeholder="Имя"
+                                       required>
+                            </div>
+                            <div class="mb-3 col-xl-6">
+                                <label for="validationDefault02"
+                                       class="form-label text-white">Фамилия</label>
+                                <input type="text" class="form-control custom-input" id="validationDefault02" placeholder="Фамилия"
+                                       required>
+                            </div>
+                            <div class="mb-3 col-xl-12">
+                                <label for="phone" class="form-label text-white">Номер телефона</label>
+                                <input type="tel" class="form-control custom-input" id="phone" placeholder="Номер телефона" required>
+                            </div>
+                            <div class="mb-3 col-xl-12">
+                                <label for="regEmail" class="form-label text-white">Електронная
+                                    почта</label>
+                                <input type="text" class="form-control custom-input" id="regEmail"
+                                       placeholder="Електронная почта" required>
+                            </div>
+                            <div class="mb-3 col-xl-12">
+                                <label for="regPassword" class="form-label text-white">Пароль</label>
+                                <input type="password" class="form-control custom-input" id="regPassword" placeholder="Пароль"
+                                       required>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                           required>
+                                    <label class="form-check-label text-white" for="invalidCheck2">
+                                        Agree to terms and conditions
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <button class="custom-btn text-white js-btn-reg" type="submit">Регистрация</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="js/script.js"></script>
 </body>

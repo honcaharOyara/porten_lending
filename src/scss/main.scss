@@ -1,4 +1,4 @@
-@import "variables";
+@import "_functionality/variables";
 //@import "./node_modules/bootstrap/scss/functions";
 //@import "./node_modules/bootstrap/scss/variables";
 //@import "./node_modules/bootstrap/scss/mixins";
@@ -13,8 +13,12 @@
 
 
 @import "fonts";
-@import "functions";
-@import "mixins";
+@import "_functionality/functions";
+@import "_functionality/mixins";
 @import "common-styles";
 @import "header";
 @import "banner";
+
+// Components
+@import "_components/modal-login";
+@import "_components/preloaders";

@@ -1,4 +1,16 @@
- .header {
+body.modal-open {
+  .header {
+    padding-right: 17px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .header {
+      padding-right: 0;
+    }
+  }
+}
+
+.header {
    width: 100%;
    position: fixed;
    z-index: 100;
@@ -44,9 +56,14 @@
    }
 
    &__log-in {
-     img {
-       margin: -2px 12px 0 0;
-       width: 19px;
+     button {
+       display: initial;
+       border: none;
+
+       img {
+         margin: -2px 12px 0 0;
+         width: 19px;
+       }
      }
    }
 

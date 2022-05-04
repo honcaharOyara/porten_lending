@@ -5,6 +5,8 @@ body {
 }
 
 .custom-btn {
+  position: relative;
+  display: block;
   padding: 10px 20px;
   background-color: $bg_dark;
 }
@@ -15,8 +17,27 @@ body {
   background-color: $bg_dark;
   transition: background-color .3s ease;
   text-decoration: none;
+  border: none;
+  border-radius: 0;
+}
+
+.p-0-20 {
+  padding: 0 20px !important;
 }
 
 .custom-btn:hover {
   background-color: $bg_light_dark;
+}
+
+.custom-input,
+.custom-input:focus {
+  background-color: $bg_input;
+  border: none;
+  border-radius: 0;
+}
+
+.custom-input,
+.custom-input:focus,
+.custom-input::placeholder {
+  color: $white;
 }
