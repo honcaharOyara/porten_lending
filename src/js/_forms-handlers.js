@@ -19,7 +19,7 @@ export function setPreloader(btn) {
     btn.style.height = btn.offsetHeight + 'px';
     btn.classList.add('p-0-20')
     btn.innerHTML = `<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`;
-    btn.setAttribute('disabled')
+    btn.setAttribute('disabled', 'disabled')
 
     const timeoutID = setTimeout(() => {
         btn.innerHTML = btnTextContent;

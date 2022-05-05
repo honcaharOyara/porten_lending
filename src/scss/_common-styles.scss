@@ -4,29 +4,47 @@ body {
   font-size: $default_font_size;
 }
 
-.custom-btn {
-  position: relative;
-  display: block;
-  padding: 10px 20px;
-  background-color: $bg_dark;
+.main {
+  padding-top: 130px;
+}
+
+@include media-breakpoint-down(lg) {
+  .main {
+    padding-top: 102px;
+  }
+}
+
+.custom-btn,
+.catalog-btn {
+  text-decoration: none;
+  transition: background-color .3s ease;
+  border-radius: 0;
 }
 
 .custom-btn {
   display: inline-block;
   padding: 10px 20px !important;
   background-color: $bg_dark;
-  transition: background-color .3s ease;
-  text-decoration: none;
   border: none;
-  border-radius: 0;
-}
-
-.p-0-20 {
-  padding: 0 20px !important;
 }
 
 .custom-btn:hover {
   background-color: $bg_light_dark;
+}
+
+.catalog-btn {
+  padding: 12px 28px;
+  border: 2px solid $white;
+  font-size: rem(18px);
+  letter-spacing: 0.1rem;
+}
+
+.catalog-btn:hover {
+  background-color: $bg_input;
+}
+
+.p-0-20 {
+  padding: 0 20px !important;
 }
 
 .custom-input,
@@ -39,5 +57,10 @@ body {
 .custom-input,
 .custom-input:focus,
 .custom-input::placeholder {
+  color: $white;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
   color: $white;
 }

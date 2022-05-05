@@ -1,8 +1,11 @@
-@font-face {
-  font-family: "Play fair Display", sans-serif;
-  src: url("../fonts/Play_Display/PlayDisplay-Bold.ttf") format("ttf");
-  src: url("../fonts/Play_Display/PlayDisplay-Regular.ttf") format("ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+// @font-face {
+//   font-family: 'Playfair Display', serif;
+//   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("ttf");
+//   src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf") format("ttf");
+// }
+
 @font-face {
   font-family: "PT sans", sans-serif;
   src: url("../fonts/PT_Sans/PTSans-Bold.ttf") format("ttf");

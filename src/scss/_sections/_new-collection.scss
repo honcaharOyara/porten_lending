@@ -2,9 +2,9 @@
     background-color: $bg_black;
 
     &__products-container {
-        padding: 100px 80px;
+        padding: 100px 20px;
 
-        >h2 {
+        h2 {
             margin-bottom: 100px;
         }
    }
@@ -13,6 +13,7 @@
        position: relative;
        font-family: 'Playfair Display', serif;
        font-size: rem(30px);
+       font-weight: 700;
 
        &::after {
            content: '';
@@ -27,6 +28,21 @@
    }
 
    &__poster {
-        
+        padding: 484px 0 100px 0;
+        background: url(../img/2-new-collection__poster.jpg) 0 center /cover;
+
+        h2 {
+            margin-bottom: 60px;
+
+            &::after {
+                bottom: -30px;
+            }
+        }
+
+        a {
+            display: block;
+            margin: 0 auto;
+            max-width: 160px;
+        }
    }
 }
