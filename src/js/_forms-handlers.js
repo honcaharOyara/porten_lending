@@ -19,11 +19,13 @@ export function setPreloader(btn) {
     btn.style.height = btn.offsetHeight + 'px';
     btn.classList.add('p-0-20')
     btn.innerHTML = `<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`;
+    btn.setAttribute('disabled')
 
     const timeoutID = setTimeout(() => {
         btn.innerHTML = btnTextContent;
         btn.removeAttribute('style');
         btn.classList.remove('p-0-20');
+        btn.removeAttribute('disabled')
         clearTimeout(timeoutID);
     }, 2000);
 }

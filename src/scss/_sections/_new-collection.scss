@@ -1,0 +1,32 @@
+.new-collection {
+    background-color: $bg_black;
+
+    &__products-container {
+        padding: 100px 80px;
+
+        >h2 {
+            margin-bottom: 100px;
+        }
+   }
+
+   &__title {
+       position: relative;
+       font-family: 'Playfair Display', serif;
+       font-size: rem(30px);
+
+       &::after {
+           content: '';
+           position: absolute;
+           left: 50%;
+           bottom: -50px;
+           width: 120px;
+           height: 1px;
+           background-color: $white;
+           transform: translateX(-50%);
+       }
+   }
+
+   &__poster {
+        
+   }
+}

@@ -1,8 +1,8 @@
 const {src, dest, watch, series, parallel} = require('gulp');
 const htmlmin = require('gulp-htmlmin');
-const scss = require('gulp-sass')(require('sass'));
+const sass = require('gulp-sass')(require('sass'));
 const connect = require('gulp-connect');
-const webpack = require('webpack-stream')
+const webpack = require('webpack-stream');
 
 const appPath = {
     scss: './src/scss/**/*.scss',
@@ -22,9 +22,9 @@ const destPath = {
 
 function buildStyles() {
     return src(appPath.scss)
-        .pipe(scss({
-            outputStyle: 'compressed'
-        }).on('error', scss.logError))
+        .pipe(sass({
+            // outputStyle: 'compressed'
+        }).on('error', sass.logError))
         .pipe(dest(destPath.css))
         .pipe(connect.reload());
 }
@@ -42,6 +42,7 @@ function buildHtml() {
 function buildJs() {
     return src(appPath.js)
         .pipe(webpack({
+            mode: 'development',
             entry: {
                 app: './src/js/index.js',
             },

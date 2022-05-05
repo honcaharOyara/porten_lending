@@ -1,6 +1,6 @@
 @import "variables";
 
 @function rem($value) {
-  $result: $value / $default_font_size;
-  @return $result + rem;
+  $result: calc($value / $default_font_size);
+  @return $result * 1rem;
 }

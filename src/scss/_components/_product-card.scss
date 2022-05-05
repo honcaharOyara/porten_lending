@@ -1,0 +1,26 @@
+.product-card {
+    max-width: rem(260px);
+    background-color: $bg_black;
+    border: none;
+
+    &__img-box {
+        padding: 55px 22px;
+        margin-bottom: 50px !important;
+        background-color: $bg_light_black;
+    }
+
+    &__img {
+        max-width: 215px;
+        width: 215px;
+    }
+
+    &__body {
+        p:first-child {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: 'Playfair Display', serif;
+        }
+    }
+}

@@ -1,24 +1,16 @@
 @import "_functionality/variables";
-//@import "./node_modules/bootstrap/scss/functions";
-//@import "./node_modules/bootstrap/scss/variables";
-//@import "./node_modules/bootstrap/scss/mixins";
-//@import "./node_modules/bootstrap/scss/utilities";
-//@import "./node_modules/bootstrap/scss/root";
-//@import "./node_modules/bootstrap/scss/reboot";
-//@import "./node_modules/bootstrap/scss/images";
-//@import "./node_modules/bootstrap/scss/containers";
-//@import "./node_modules/bootstrap/scss/grid";
-//@import "./node_modules/bootstrap/scss/navbar";
-@import "./node_modules/bootstrap/scss/bootstrap";
-
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import '../../node_modules/swiper/swiper.scss';
 
 @import "fonts";
 @import "_functionality/functions";
 @import "_functionality/mixins";
 @import "common-styles";
-@import "header";
-@import "banner";
+@import "_sections/header";
+@import "_sections/banner";
+@import "_sections/new-collection";
 
 // Components
+@import "_components/product-card";
 @import "_components/modal-login";
 @import "_components/preloaders";
