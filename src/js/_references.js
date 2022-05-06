@@ -4,9 +4,11 @@ export default {
 
     formLogIn: document.querySelector('.js-form-log'),
     formRegistration: document.querySelector('.js-form-reg'),
+    formMailing: document.querySelector('.js-form-mailing'),
 
     submitBtnLog: document.querySelector('.js-btn-log'),
     submitBtnReg: document.querySelector('.js-btn-reg'),
+    submitBtnMail: document.querySelector('.js-btn-mailing'),
 
     newCollectionSwierSlide: document.querySelector('.swiper-slide'),
     newCollectionSwiperContainer: document.querySelector('.new-collection__swiper'),

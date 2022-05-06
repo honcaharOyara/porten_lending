@@ -12,6 +12,12 @@ export function registrationFormHandler(e) {
     setPreloader(refs.submitBtnReg);
 }
 
+export function mailingFormHandler(e) {
+    e.preventDefault();
+
+    setPreloader(refs.submitBtnMail);
+}
+
 export function setPreloader(btn) {
     const btnTextContent = btn.textContent;
 
