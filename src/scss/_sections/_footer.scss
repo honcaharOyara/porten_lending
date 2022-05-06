@@ -1,0 +1,18 @@
+.footer {
+    padding: 80px 0 100px 0;
+    background: url('../img/footer__bg.jpg') center /cover;
+
+    h2 {
+        margin-bottom: 40px;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &__categories {
+        a {
+            margin: 0 20px 20px 0;
+        }
+    }
+}
