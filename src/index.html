@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="header__log-in">
-                    <a class="custom-btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <a class="custom-btn" href="#" data-bs-toggle="modal" data-bs-target="#log-in-modal">
                         <img src="./img/svg/log-in.svg" alt="Porten">
                         <span>Войти / Регистрация</span>
                     </a>
@@ -138,14 +138,14 @@
     
                 <div class="col-xl-6 col-lg-6 col-sm-12 new-collection__poster">
                     <h2 class="text-uppercase text-white text-center new-collection__title">Новая коллекция</h2>
-                    <a href="#" class="text-white text-uppercase text-center catalog-btn">Каталог</a>
+                    <a href="#" class="text-white text-uppercase text-center catalog-btn" href="#" data-bs-toggle="modal" data-bs-target="#catallog-modal">Каталог</a>
                 </div>
             </div>
         </div>
     </section>
 </main>
 
-<div class="modal fade lightbox" id="exampleModal" tabindex="-1"
+<div class="modal fade lightbox" id="log-in-modal" tabindex="-1"
      aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content lightbox__content">
@@ -233,6 +233,11 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="modal fade lightbox" id="catallog-modal" tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog"></div>
 </div>
 
 <script src="js/script.js"></script>
