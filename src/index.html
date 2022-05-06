@@ -290,7 +290,7 @@
                 <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.</p>
                 <form class="row g-3 mt-3 js-form-mailing">
                     <div class="mb-3 col-8">
-                        <input type="text" class="form-control custom-input" id="logEmail"
+                        <input type="text" class="form-control needs-validation custom-input" id="mailingEmail" data-key="email"
                                placeholder="Електронная почта" required>
                     </div>
                     <div class="col-4">
@@ -336,11 +336,11 @@
                     <div class=" tab-pane fade show active" id="log-in" role="tabpanel" aria-labelledby="log-in">
                         <form class="row g-3 mt-3 js-form-log">
                             <div class="mb-3 col-xl-12">
-                                <input type="text" class="form-control custom-input" id="logEmail"
+                                <input type="text" class="form-control custom-input" id="logEmail" data-key="email"
                                        placeholder="Електронная почта" required>
                             </div>
                             <div class="mb-3 col-xl-12">
-                                <input type="password" class="form-control custom-input" id="logPassword"
+                                <input type="password" class="form-control custom-input" id="logPassword" data-key="password"
                                        placeholder="Пароль" required>
                             </div>
                             <div class="col-12 ">
@@ -352,23 +352,23 @@
                         <form class="row g-3 mt-3 js-form-reg">
                             <div class="mb-3 col-xl-6">
                                 <input type="text" class="form-control custom-input" id="validationDefault01" placeholder="Имя"
-                                       required>
+                                data-key="firstName" required>
                             </div>
                             <div class="mb-3 col-xl-6">
                                 <input type="text" class="form-control custom-input" id="validationDefault02" placeholder="Фамилия"
-                                       required>
+                                data-key="lastName" required>
                             </div>
                             <div class="mb-3 col-xl-12">
-                                <input type="tel" class="form-control custom-input" id="phone" placeholder="Номер телефона" required>
+                                <input type="tel" class="form-control custom-input" id="phone" placeholder="Номер телефона" 
+                                data-key="phone" required>
                             </div>
                             <div class="mb-3 col-xl-12">
-                                    почта</label>
-                                <input type="text" class="form-control custom-input" id="regEmail"
-                                       placeholder="Електронная почта" required>
+                                <input type="text" class="form-control custom-input" id="regEmail"  placeholder="Електронная почта" 
+                                data-key="email" required>
                             </div>
                             <div class="mb-3 col-xl-12">
                                 <input type="password" class="form-control custom-input" id="regPassword" placeholder="Пароль"
-                                       required>
+                                data-key="password" required>
                             </div>
                             <div class="col-xl-12">
                                 <div class="form-check">

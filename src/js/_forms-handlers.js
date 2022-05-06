@@ -1,37 +1,50 @@
-import refs from './_references.js'
-
-export function logInFormHandler(e) {
+export default function formHandler(e) {
     e.preventDefault();
+    const target = e.target;
+    const submitBtn = target.querySelector('.custom-btn');
+    const formControlInputs = target.querySelectorAll('.form-control');
 
-    setPreloader(refs.submitBtnLog);
+    setPreloader(submitBtn);
+    getFormData(target, formControlInputs);
+    formControlInputs.forEach(input => {
+        input.value = '';
+    })
 }
 
-export function registrationFormHandler(e) {
-    e.preventDefault();
+function getFormData(target, formControlInputs) {
+    const formData = {};
 
-    setPreloader(refs.submitBtnReg);
+    formControlInputs.forEach(input => {
+        formData[input.dataset.key] = input.value;
+    }); 
+
+    if (target.classList.contains('js-form-log')) {
+        console.log(formData);
+    }
+
+    if (target.classList.contains('js-form-reg')) {
+        console.log(formData);
+    }
+
+    if (target.classList.contains('js-form-mailing')) {
+        console.log(formData);
+    }
 }
 
-export function mailingFormHandler(e) {
-    e.preventDefault();
-
-    setPreloader(refs.submitBtnMail);
-}
-
-export function setPreloader(btn) {
+function setPreloader(btn) {
     const btnTextContent = btn.textContent;
 
     btn.style.width = btn.offsetWidth + 'px';
     btn.style.height = btn.offsetHeight + 'px';
-    btn.classList.add('p-0-20')
+    btn.classList.add('p-0-20');
     btn.innerHTML = `<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`;
-    btn.setAttribute('disabled', 'disabled')
+    btn.setAttribute('disabled', 'disabled');
 
     const timeoutID = setTimeout(() => {
         btn.innerHTML = btnTextContent;
         btn.removeAttribute('style');
         btn.classList.remove('p-0-20');
-        btn.removeAttribute('disabled')
+        btn.removeAttribute('disabled');
         clearTimeout(timeoutID);
     }, 2000);
 }

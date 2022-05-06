@@ -1,7 +1,4 @@
 export default {
-    btnLogIn: document.querySelector('.js-log-in'),
-    btnCloseModal: document.querySelector('.js-btn-close'),
-
     formLogIn: document.querySelector('.js-form-log'),
     formRegistration: document.querySelector('.js-form-reg'),
     formMailing: document.querySelector('.js-form-mailing'),
