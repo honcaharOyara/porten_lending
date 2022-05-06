@@ -11912,6 +11912,14 @@ body.modal-open .header {
     display: none;
   }
 }
+@media (max-width: 575.98px) {
+  .header__info a img {
+    display: none;
+  }
+  .header__log-in a img {
+    display: none;
+  }
+}
 .header__log-in a img {
   margin: -2px 12px 0 0;
   width: 14px;
@@ -12032,6 +12040,17 @@ body.modal-open .header {
 }
 .new-arrivals__collection-box .product-card {
   margin-bottom: 40px;
+}
+
+.our-brands {
+  padding: 60px 0 80px 0;
+  background-color: #0F0F0F;
+}
+.our-brands h2, .our-brands .h2 {
+  margin-bottom: 80px;
+}
+.our-brands h2::after, .our-brands .h2::after {
+  bottom: -40px;
 }
 
 .product-card {

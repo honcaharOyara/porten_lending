@@ -53,7 +53,25 @@ body.modal-open {
          display: none;
        }
      }
-   }
+    }
+
+    @include media-breakpoint-down(sm) {
+      &__info{
+        a {
+          img {
+            display: none;
+          }
+        }
+      }
+      
+      &__log-in {
+        a {
+          img {
+            display: none;
+          }
+        }
+      }
+    }
 
    &__log-in {
      a {

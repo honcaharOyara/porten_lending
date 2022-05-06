@@ -1,0 +1,12 @@
+.our-brands {
+    padding: 60px 0 80px 0;
+    background-color: $bg_dark;
+
+    h2 {
+        margin-bottom: 80px;
+
+        &::after {
+            bottom: -40px;
+        }
+    }
+}
