@@ -11,7 +11,6 @@ export default function slider(params) {
   const slidesOffsetValue = (slideValues.sliderContinerWidth - slideValues.slideWidth) / 2;
   
   const swiperOption = {
-      loop: true,
       speed: 400,
       spaceBetween: 50,
       width: slideValues.slideWidth,

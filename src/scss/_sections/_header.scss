@@ -31,11 +31,11 @@ body.modal-open {
    &__log-in {
      a,
      span {
-       color: $text_gray;
+      font-size: $default_font_size;
+      color: $text_gray;
      }
 
      a {
-       font-size: rem(14px);
        padding: 14px 20px !important;
        background-color: $bg_black;
      }
@@ -56,13 +56,10 @@ body.modal-open {
    }
 
    &__log-in {
-     button {
-       display: initial;
-       border: none;
-
+     a {
        img {
          margin: -2px 12px 0 0;
-         width: 19px;
+         width: 14px;
        }
      }
    }

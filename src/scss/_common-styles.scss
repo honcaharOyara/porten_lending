@@ -1,7 +1,8 @@
 body {
   position: relative;
   font-family: "PT sans", sans-serif;
-  font-size: $default_font_size;
+  font-size: $default_font_size !important;
+  background-color: $bg_black;
 }
 
 .main {
@@ -60,7 +61,33 @@ body {
   color: $white;
 }
 
+.swiper-slide:last-child {
+  margin: 0 !important;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   color: $white;
+}
+
+.swiper-button-disabled {
+  color: $bg_input;
+}
+
+.section-title {
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  font-size: rem(30px);
+  font-weight: 700;
+
+  &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -50px;
+      width: 120px;
+      height: 1px;
+      background-color: $white;
+      transform: translateX(-50%);
+  }
 }

@@ -1,0 +1,17 @@
+.new-arrivals {
+    padding: 130px 0 110px 0;
+
+    h2 {
+        margin-bottom: 80px;
+
+        &::after {
+            bottom: -40px;
+        }
+    }
+
+    &__collection-box {
+        .product-card {
+            margin-bottom: 40px;
+        }
+    }
+}
