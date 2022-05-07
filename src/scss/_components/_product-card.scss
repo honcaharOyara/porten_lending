@@ -1,7 +1,14 @@
 .product-card {
+    padding: 5px;
     max-width: rem(260px);
     background-color: $bg_black;
     border: none;
+    border-radius: 0;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: $bg-dark;
+    }
 
     &__img-box {
         padding: 55px 22px;

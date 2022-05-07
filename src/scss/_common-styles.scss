@@ -93,9 +93,14 @@ body {
 }
 
 .post-footer {
-  p{
+  p {
     margin: 0;
     padding: 17px 0;
     font-size: rem(12px);
   }
+}
+
+a:focus {
+  outline: none;
+  box-shadow: none;
 }

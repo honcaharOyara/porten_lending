@@ -6,6 +6,7 @@ export default function formHandler(e) {
 
     setPreloader(submitBtn);
     getFormData(target, formControlInputs);
+
     formControlInputs.forEach(input => {
         input.value = '';
     })

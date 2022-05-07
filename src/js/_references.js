@@ -1,4 +1,11 @@
 export default {
+    textInnerbtnLogIn: document.querySelector('.js-btn-log-in span'),
+
+    tabBtnLog: document.querySelector('#log-tab'),
+    tabBtnReg: document.querySelector('#reg-tab'),
+    tabPaneLog: document.querySelector('#log-in'),
+    tabPaneReg: document.querySelector('#registration'),
+
     formLogIn: document.querySelector('.js-form-log'),
     formRegistration: document.querySelector('.js-form-reg'),
     formMailing: document.querySelector('.js-form-mailing'),
@@ -14,5 +21,10 @@ export default {
 
     ourBrandsSwiperContainer: '.our-brands__swiper',
 
-    modal: document.querySelector('.js-modal'),
+    productCardImgSwiperContainer: document.querySelector('.lightbox-product-img__swiper'),
+    productCardImgSwiperNextEl: '.product-card-img__swiper-button-next',
+    productCardImgSwiperPrevEl: '.product-card-img__swiper-button-prev',
+    productCardImgSwiperPagination: '.swiper-pagination',
+
+    productCardImgModalID: document.querySelector('#product-cart-modal'),
 };

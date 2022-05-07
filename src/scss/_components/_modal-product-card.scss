@@ -1,0 +1,48 @@
+.lightbox-product {
+    &-img__swiper {
+        width: 100%;
+
+        .swiper-pagination-bullet {
+            background-color: $bg_input;
+        }
+
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: $white;
+        }
+    }
+
+    &__header,
+    &__body,
+    &__foter,
+    .nav-link,
+    .nav-link:hover,
+    &__tabs,
+    &__tabs:hover,
+    &__btn-close,
+    .custom-btn.active,
+    .custom-btn:focus,
+    .custom-btn:hover{
+        border: none;
+        border-radius: 0;
+    }
+
+    &__content {
+        background-color: $bg_dark;
+        border: none;
+    }
+
+    &__product-card {
+        padding: 0;
+        max-width: 100%;
+        background-color: $bg_dark;
+
+        &:hover {
+            background-color: $bg_dark;
+        }
+    }
+
+    &__img-box {
+        padding: 30px 0;
+        background-color: $bg_light_black;
+    }
+}
