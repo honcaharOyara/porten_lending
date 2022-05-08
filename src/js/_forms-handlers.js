@@ -38,7 +38,8 @@ function setPreloader(btn) {
     btn.style.width = btn.offsetWidth + 'px';
     btn.style.height = btn.offsetHeight + 'px';
     btn.classList.add('p-0-20');
-    btn.innerHTML = `<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`;
+    btn.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <span class="visually-hidden">Loading...</span>`;
     btn.setAttribute('disabled', 'disabled');
 
     const timeoutID = setTimeout(() => {

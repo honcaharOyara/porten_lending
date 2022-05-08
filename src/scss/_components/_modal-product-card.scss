@@ -26,6 +26,14 @@
         border-radius: 0;
     }
 
+    .custom-btn {
+        background-color: $bg_black;
+    }
+
+    .custom-btn:hover {
+        background-color: $bg_light_black;
+    }
+
     &__content {
         background-color: $bg_dark;
         border: none;
