@@ -15,6 +15,7 @@ export default function slider() {
       spaceBetween: 50,
       width: slideValues.slideWidth,
       slidesOffsetBefore: slidesOffsetValue,
+      slidesOffsetAfter: -slidesOffsetValue,
   
       navigation: {
         nextEl: refs.newCollectionSwiperNextEl,
